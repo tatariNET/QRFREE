@@ -75,6 +75,55 @@ body {
   z-index: 1;
 }
 
+.range-pro {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  outline: none;
+  box-shadow: inset 0 0 4px rgba(15, 23, 42, 0.18);
+}
+
+.range-pro::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 999px;
+  background: transparent;
+}
+
+.range-pro::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #f8fafc;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.25);
+  margin-top: -5px;
+  transition: transform 0.15s ease;
+}
+
+.range-pro::-webkit-slider-thumb:active {
+  transform: scale(1.08);
+}
+
+.range-pro::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: transparent;
+}
+
+.range-pro::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #f8fafc;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.25);
+  transition: transform 0.15s ease;
+}
+
 @keyframes qrfree-snake {
   0% {
     background-position: 0% 0%;
